@@ -173,3 +173,12 @@ def func_pp():
     mes_mini = df_ingreso.idxmax(axis=1)
     # Obtengo la media de los gastos del año
     mean_g = df_gasto.mean(axis=1)
+    
+    # Printeo las respuestas a las preguntas del ejercicio1
+    print("El mes que se ha gastado más ha sido:",mes_minb, "con un total de", maxs_g)
+    print("El mes que se ha ahorrado más ha sido:",mes_maxb, "con un total de", mins_i)
+    print("La media de los gastos del año ha sido:",mean_g)
+
+    print("En el año ha habido un ingreso de  ", sum(lista_ingreso), "€")
+    print("En el año ha habido un gasto de  ", sum(lista_gasto), "€")
+    print("En el año ha habido un balance de  ", sum(lista_balance), "€")
